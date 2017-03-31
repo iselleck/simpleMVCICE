@@ -289,10 +289,13 @@ const searchDogName = (req, res) => {
         if(!doc){
             return res.json({ error: 'No dog by that name was found found' });
         }
+        const upAge = doc.age;
         
         doc.age++;
     
         doc.save();
+        
+        return upAge;
        
     });
     
