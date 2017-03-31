@@ -8,11 +8,42 @@
   <title>{{title}}</title>
 </head>
 <body>
-  <h1>Welcome to page 3</h1>
+  <h1>Add some dogs!</h1>
   
   <!-- links or URLs are always GET resources as they are getting (retrieving) a resource -->
   <a href="/">Home</a>
-  <a href="/page1">Page 1</a>
+   <a href="/page1">Page 1</a>
   <a href="/page2">Page 2</a>
+  <a href="/page3">Page 3</a>
+     <a href="/page4">Page 4</a>
+    
+    
+      
+    <br />
+    
+    <form action="/setDogName" method="POST">
+        <label for="name">Name: </label>
+        <input type="text" name="name" value="">
+        <label for="breed">Breed: </label>
+        <input type="text" name="breed" value="">
+        <label for="age">Age: </label>
+        <input type="number" name="age" value="">
+        <input type="submit" value="Add Dog">
+    </form>
+    
+    <br />
+    
+    <form action="/updateLast" method="post">
+        <input type="submit" value="Update Last">
+    </form>
+    
+    <br />
+    
+    <form action="findDog" method="POST">
+        <label for="name">Name to search</label>
+        <input type="text" name="name" value="">
+        <input type="submit" value="Submit">
+    </form>
+    
 </body>
 </html>
